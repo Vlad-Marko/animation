@@ -1,0 +1,152 @@
+body {
+  background-color: floralwhite;
+}
+
+marquee {
+  font-size: 24px;
+}
+.marq {
+  font-size: 50px;
+}
+.marq1 {
+  width: 50%;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+@keyframes example1 {
+  from {
+    background-color: yellow;
+  }
+  to {
+    background-color: red;
+  }
+}
+.d1 {
+  animation-name: example1;
+  animation-duration: 4s;
+}
+@keyframes example2 {
+  0% {
+    background-color: yellow;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: aqua;
+  }
+  100% {
+    background-color: blueviolet;
+  }
+}
+
+.d2 {
+  animation-name: example2;
+  animation-duration: 10s;
+}
+@keyframes example3 {
+  0% {
+    background-color: yellow;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: green;
+    left: 400px;
+    top: 0px;
+  }
+  50% {
+    background-color: red;
+    left: 400px;
+    top: 400px;
+  }
+  75% {
+    background-color: aqua;
+    left: 0px;
+    top: 400px;
+  }
+  100% {
+    background-color: blueviolet;
+    left: 0px;
+    top: 0px;
+  }
+}
+.d3,
+.d31,
+.d32,
+.d33,
+.d34,
+.d35,
+.d36 {
+  width: 100px;
+  animation-name: example3;
+  animation-duration: 5s;
+  position: relative;
+}
+.d31 {
+  animation-delay: 2s;
+}
+.d32 {
+  animation-delay: -2s;
+}
+
+.d33 {
+  animation-iteration-count: 3;
+}
+.d34 {
+  animation-iteration-count: infinite;
+}
+.d35 {
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.d36 {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes example4 {
+  0% {
+    background-color: yellow;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: green;
+    left: 800px;
+    top: 0px;
+  }
+}
+
+.d4,
+.d41,
+.d42,
+.d43,
+.d44 {
+  width: 100px;
+  animation-name: example4;
+  animation-duration: 5s;
+  position: relative;
+  animation-iteration-count: infinite;
+}
+.d4 {
+  animation-timing-function: ease;
+}
+.d41 {
+  animation-timing-function: linear;
+}
+.d42 {
+  animation-timing-function: ease-in;
+}
+.d43 {
+  animation-timing-function: ease-out;
+}
+.d44 {
+  animation-timing-function: ease-in-out;
+}
